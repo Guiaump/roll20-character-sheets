@@ -1,8 +1,7 @@
-<!--Tentative de traduction, v0.1, c'est la merde-->        
-		<input style="margin-left:9px;" type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" checked="checked"><span data-i18n-title="personaje-title" title="PERSONAJE"></span>
-        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2"><span data-i18n-title="pnj-title" title="PNJ"></span>
-	    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3"><span data-i18n-title="vehiculo-title" title="VEHÍCULO"></span>
-        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab4" value="4"><span data-i18n-title="organizacion-title" title="ORGANIZACIÓN"></span>
+        <input style="margin-left:9px;" type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" checked="checked"><span title="PERSONAJE"></span>
+        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2"><span title="PNJ"></span>
+	    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3"><span title="VEHÍCULO"></span>
+        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab4" value="4"><span title="ORGANIZACIÓN"></span>
 
 <div class="sheet-tab-content sheet-tab1 ">
     <div class="sheet-section-basic sheet-section">
@@ -14,15 +13,15 @@
                 <table>
                     <tbody>
                         <tr>
-                        <td><label data-i18n="Nombre">Nombre</label> <input style="width: 195px; text-align: left;" name="attr_character_name" type="text" /></td>
-                        <td><label data-i18n="concepto">Concepto</label> <input style="width: 300px; text-align: left;" name="attr_Concepto" type="text" /></td>
-                        <td><label data-i18n="drama">Drama</label> <input class='sheet-skillvaluebox' style="width: 40px; text-align: left;" type="number" name="attr_Drama_ACTUAL" />/<input class='sheet-skillvaluebox' style="width: 40px; text-align: left;" type="number" name="attr_Drama" /></td></tr>
+                        <td><label>Nombre</label> <input style="width: 195px; text-align: left;" name="attr_character_name" type="text" /></td>
+                        <td><label>Concepto</label> <input style="width: 300px; text-align: left;" name="attr_Concepto" type="text" /></td>
+                        <td ><label>Drama</label> <input class='sheet-skillvaluebox' style="width: 40px; text-align: left;" type="number" name="attr_Drama_ACTUAL" />/<input class='sheet-skillvaluebox' style="width: 40px; text-align: left;" type="number" name="attr_Drama" /></td></tr>
                     </tbody>
                 </table>
                 <table>
                     <tbody>
                         <tr>
-                        <td ><label data-i18n="cita">Cita</label> <input style="width: 590px; text-align: left;"type="text" name="attr_Cita" /></td>
+                        <td ><label>Cita</label> <input style="width: 590px; text-align: left;"type="text" name="attr_Cita" /></td>
                         </tr>
                     </tbody>
                 </table>
@@ -35,19 +34,19 @@
     
     <div class="sheet-break"></div>
     <div class="sheet-section-aspects sheet-section">
-    <div class="sheet-header" data-i18n="sheet-header1">HITOS Y COMPLICACIONES</div>
+    <div class="sheet-header">HITOS Y COMPLICACIONES</div>
     <table width="835">
         <tbody>
             <tr>
-                <td><input style="width: 416px;" name="attr_Aspect1" type="text" data-i18n-placeholder="hito-placeh" placeholder="Hito" /></td>
-                <td><input style="width: 416px;" name="attr_Aspect2" type="text" data-i18n-placeholder="hito-placeh" placeholder="Hito" /></td>
+                <td><input style="width: 416px;" name="attr_Aspect1" type="text" placeholder="Hito" /></td>
+                <td><input style="width: 416px;" name="attr_Aspect2" type="text" placeholder="Hito" /></td>
             </tr>
             <tr>
-                <td><input style="width: 416px;" name="attr_Aspect3" type="text" data-i18n-placeholder="hito-placeh" placeholder="Hito" /></td>
-                <td><input style="width: 416px;" name="attr_Aspect4" type="text" data-i18n-placeholder="hito-placeh" placeholder="Hito" /></td>
+                <td><input style="width: 416px;" name="attr_Aspect3" type="text" placeholder="Hito" /></td>
+                <td><input style="width: 416px;" name="attr_Aspect4" type="text" placeholder="Hito" /></td>
             </tr>
             <tr>
-            <td><input name="attr_complicacion" type="text" data-i18n-placeholder="complication-placeh" placeholder="Complicacion" /></td>
+            <td><input name="attr_complicacion" type="text" placeholder="Complicacion" /></td>
             <td>
                 <table>
                     <tbody>
@@ -68,22 +67,22 @@
     
     
     <div class="sheet-section-stunts sheet-section sheet-half">
-    <div class="sheet-header" data-i18n="salud">SALUD</div>
+    <div class="sheet-header">SALUD</div>
         <table style="width: 410px;">
             <tbody>
             <tr>
-                <td><strong data-i18n="aguante">AGUANTE</strong></td>
+                <td><strong>AGUANTE</strong></td>
                 <td style="text-align: right; "><button style="width: 33px;" type="roll" value="/r {3d10dh1}kh1+ floor(@{aguante}) +?{Modificador|0} "></button></td>
                 <td style="text-align: right;"><input style="width: 40px;" disabled="true"  name="attr_aguante" type="number" value="round(@{VOLUNTAD}/2)+@{FORTALEZA}"  /></td>
-                <td><strong data-i18n="entereza">ENTEREZA</strong></td>
+                <td><strong>ENTEREZA</strong></td>
                 <td style="text-align: right; "><button style="width: 33px;" type="roll" value="/r {3d10dh1}kh1+ floor(@{ENTEREZA})+?{Modificador|0} "></button></td>
                 <td style="text-align: right;"><input style="width: 40px;"  disabled="true"  name="attr_ENTEREZA" type="number" value="round(@{INTELECTO} / 2) + @{VOLUNTAD}" /></td>
                 </tr>
             <tr>
-                <td style="text-align: right;" data-i18n="puntos">PUNTOS RR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td style="text-align: right;">PUNTOS RR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                 <td style="text-align: right;"><input style="width: 40px;"  name="attr_RESISTENCIA" type="number" value="[[(@{aguante})*3]]" /></td>
                 <td style="text-align: right;"><input style="width: 40px;"  disabled="true" name="attr_RESISTENCIA_max" type="number" value="[[(@{aguante})*3]]" /></td>
-                <td style="text-align: right;" data-i18n="mental">SALUD MENTAL</td>
+                <td style="text-align: right;">SALUD MENTAL</td>
                 <td style="text-align: right;"><input style="width: 40px;" name="attr_SALUD_MENTAL" type="number" value="[[(@{ENTEREZA})*3]]" /></td>
                 <td style="text-align: right;"><input style="width: 40px;"  disabled="true" name="attr_SALUD_MENTAL_max" type="number" value="[[(@{ENTEREZA})*3]]" /></td>
             </tr>
@@ -92,9 +91,9 @@
         <table style="width: 410px;">
             <tbody>
                 <tr>
-                <td style="width: 165px; text-align: right;" data-i18n="consolidado">Consolidado</td>
+                <td style="width: 165px; text-align: right;">Consolidado</td>
                 <td style="text-align: right;"><input style="width: 40px;" name="attr_consolidado_fisico" type="number" /></td>
-                <td style="width: 165px; text-align: right;" data-i18n="consolidado">Consolidado</td>
+                <td style="width: 165px; text-align: right;">Consolidado</td>
                 <td style="text-align: right;"><input style="width: 40px;" name="attr_consolidado_mental" type="number" /></td>
                 </tr>
             </tbody>
@@ -102,23 +101,23 @@
         <table style="width: 410px;">
             <tbody>
                 <tr>
-                <td style="width: 85px; " data-i18n="estfisico">Estado Fisico</td>
+                <td style="width: 85px; ">Estado Fisico</td>
                 <td style="text-align: right;"><input style="width: 120px;" name="attr_fisico" readonly="readonly" type="text" /></td>
-                <td style="width: 85px; " data-i18n="estmental">Estado Mental</td>
+                <td style="width: 85px; ">Estado Mental</td>
                 <td style="text-align: right;"><input style="width: 120px;" name="attr_Estado_Mental" readonly="readonly" type="text" /></td>
                 </tr>
             </tbody>
         </table>
         <div class="sheet-break"></div>
         <div class="sheet-section-aspects sheet-section">
-            <div ><strong data-i18n="secuelas">SECUELAS Y TRASTORNOS</strong></div>
+            <div ><strong>SECUELAS Y TRASTORNOS</strong></div>
             <table width="410">
                 <tbody>
                     <tr>
-                        <td><input name="attr_Secuela1" type="text" data-i18n-placeholder="secuala-placeh" placeholder="Secuela" /></td>
+                        <td><input name="attr_Secuela1" type="text" placeholder="Secuela" /></td>
                     </tr>
                     <tr>
-                        <td><input name="attr_Secuela2" type="text" data-i18n-placeholder="secuala-placeh" placeholder="Secuela" /></td>
+                        <td><input name="attr_Secuela2" type="text" placeholder="Secuela" /></td>
                     </tr>
                 </tbody>
             </table>
@@ -126,9 +125,9 @@
             <table style="width: 410px;">
                 <tbody>
                     <tr>
-                    <td><strong data-i18n="degeneracion">DEGENERACI&Oacute;N</strong></td>
+                    <td><strong>DEGENERACI&Oacute;N</strong></td>
                     <td > <input style="width: 40px;" name="attr_DEGENERACI&Oacute;N" type="number" value="0" /></td>
-                    <td><input style="width: 264px;" name="attr_DEGENERACI&Oacute;N_ESTADO" type="text" data-i18n-placeholder="estactual-placeh" placeholder="Estado Actual" /></td>
+                    <td><input style="width: 264px;" name="attr_DEGENERACI&Oacute;N_ESTADO" type="text" placeholder="Estado Actual" /></td>
                     </tr>
                 </tbody>
             </table>
@@ -137,31 +136,31 @@
     
     
     <div class="sheet-section-Specialisations sheet-section sheet-half">
-        <div class="sheet-header" data-i18n="combate">COMBATE</div>
+        <div class="sheet-header">COMBATE</div>
         <table style="height: 100%;">
             <tbody>
                 <tr>
-                <td><strong data-i18n="iniciativa">INICIATIVA</strong></td>
+                <td><strong>INICIATIVA</strong></td>
                 <td ><button style="width: 40px;" type="roll" value="/r {3d10dh1}kh1+ floor(@{INTELECTO} / 2) + @{REFLEJOS} "></button></td>
-                <td><strong data-i18n="ataque">ATAQUE</strong></td>
+                <td><strong>ATAQUE</strong></td>
                 <td ><button style="width: 40px;" type="roll" value="/r {3d10dh1}kh1 + @{REFLEJOS} + @{COMBATE}"></button></td>
-                <td ><strong data-i18n="defensa">DEFENSA</strong></td>
+                <td ><strong>DEFENSA</strong></td>
                 <td ><button style="width: 40px;" type="roll" value="/r {3d10dh1}kh1 + @{REFLEJOS} +5 + ?{Elige Habilidad|Forma Física, @{FORMA_FÍSICA}|Combate, @{COMBATE}} + ?{Modificador|0}"></button></td>
                 </tr>
                 <tr>
                 <tr>
-                <td ><strong data-i18n="dano-cac">DAÑO CaC</strong></td>
+                <td ><strong>DAÑO CaC</strong></td>
                 <td ><strong><input style="width: 40px;" name="attr_INICIATIVA" type="number" value="round((@{FORTALEZA}+@{COMBATE}) / 4)" disabled="true"/></strong></td>
-                <td  style="width: 100px;" ><strong data-i18n="dano-dis">DAÑO DIS</strong></td>
+                <td  style="width: 100px;" ><strong>DAÑO DIS</strong></td>
                 <td ><strong><input style="width: 40px;" name="attr_INICIATIVA" type="number" value="round(@{COMBATE} / 4)" disabled="true"/></strong></td>
-                <td  style="width: 100px;" ><strong data-i18n="desprevenido">DESPREVENIDO</strong></td>
+                <td  style="width: 100px;" ><strong>DESPREVENIDO</strong></td>
                 <td ><button style="width: 40px;" type="roll" value="/r {3d10dh1}kh1 + @{REFLEJOS} +5 + ?{Elige Habilidad|Forma Física, @{FORMA_FÍSICA}|Combate, @{COMBATE}} -2 + ?{Modificador|0}"></button></td>
                 </tr>
             </tbody>
         </table>
         <table  style="height: 21px;" width="630">
             <tbody>
-                <tr ><td style="width:310px;"><strong data-i18n="arma">ARMA</strong></td><td ><strong data-i18n="dano">DAÑO</strong></td></tr>
+                <tr ><td style="width:310px;"><strong>ARMA</strong></td><td ><strong>DAÑO</strong></td></tr>
             </tbody>
         </table>
         <table style="height: 100%;">
@@ -182,7 +181,7 @@
         </table>
         <table  style="height: 22px;" width="410">
             <tbody>
-                <tr><td style="width:310px;" ><strong data-i18n="protecccion">PROTECCIÓN</strong></td><td><strong data-i18n="rd">RD</strong></td></tr>
+                <tr><td style="width:310px;" ><strong>PROTECCIÓN</strong></td><td><strong>RD</strong></td></tr>
             </tbody>
         </table>
         <table style="height: 100%;">
@@ -201,80 +200,80 @@
     
     
     <div class="sheet-section-aspects sheet-section">
-    <div class="sheet-header" data-i18n="caracteristicas">CARACTERISTICAS</div></div>
+    <div class="sheet-header">CARACTERISTICAS</div></div>
         <table style="width: 100%;">
             <tbody>
                 <tr>
-                <td ><strong data-i18n="c-fortaleza">FORTALEZA</strong></td>
+                <td ><strong>FORTALEZA</strong></td>
                 <td ><input type="number" name="attr_FORTALEZA" value="0" /><input name="attr_FORTALEZA_hito" style="width: 287px;" type="text" placeholder="Concepto" /></td>
-                <td ><strong data-i18n="c-voluntad">VOLUNTAD</strong></td>
+                <td ><strong>VOLUNTAD</strong></td>
                 <td ><input type="number" name="attr_VOLUNTAD" value="0" /><input name="attr_VOLUNTAD_hito" style="width: 287px;" type="text" placeholder="Concepto" /></td>
                 </tr>
                 <tr>
-                <td ><strong data-i18n="c-reflejos">REFLEJOS</strong></td>
+                <td ><strong>REFLEJOS</strong></td>
                 <td ><input type="number" name="attr_REFLEJOS" value="0" /><input name="attr_REFLEJOS_hito" style="width: 287px;" type="text" placeholder="Concepto" /></td>
-                <td ><strong data-i18n="c-intelecto">INTELECTO</strong></td>
+                <td ><strong>INTELECTO</strong></td>
                 <td ><input type="number" name="attr_INTELECTO" value="0" /><input name="attr_INTELECTO_hito" style="width: 287px;" type="text" placeholder="Concepto" /></td>
                 </tr>
             </tbody>
         </table>
     <div class="sheet-section-aspects sheet-section">
-    <div class="sheet-header" data-i18n="habilidades">HABILIDADES</div></div>
+    <div class="sheet-header">HABILIDADES</div></div>
         <table style="width: 100%; height: 204px;">
             <tbody>
                 <tr>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/accion.jpg" /><strong data-i18n="h-fisica">FORMA FÍSICA</strong> </td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/accion.jpg" /><strong>FORMA FÍSICA</strong> </td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{FORMA_FÍSICA}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_FORMA_FÍSICA" type="number" value="0" /><input style="width: 220px;" type="text" name="attr_FORMA_FÍSICA_hito" /></td>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/percepcion.jpg" /><strong data-i18n="h-percepcion">PERCEPCIÓN</strong></td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/percepcion.jpg" /><strong>PERCEPCIÓN</strong></td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{PERCEPCIÓN}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_PERCEPCIÓN" type="number" value="0" /><input style="width: 220px;" type="text"  name="attr_PERCEPCIÓN_hito" /></td>
                 </tr>
                 <tr>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/combate.jpg" /><strong data-i18n="h-combate">COMBATE</strong></td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/combate.jpg" /><strong>COMBATE</strong></td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{COMBATE}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_COMBATE" type="number" value="0" /><input style="width: 220px;" type="text"  name="attr_COMBATE_hito" /></td>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/subterfugio.jpg" /><strong data-i18n="h-subterfugio">SUBTERFUGIO</strong> </td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/subterfugio.jpg" /><strong>SUBTERFUGIO</strong> </td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{SUBTERFUGIO}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_SUBTERFUGIO" type="number" value="0" /><input style="width: 220px;" type="text"  name="attr_SUBTERFUGIO_hito" /></td>
                 </tr>
                 <tr>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/comunicacion.jpg" /><strong data-i18n="h-comunicacion">COMUNICACIÓN</strong> </td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/comunicacion.jpg" /><strong>COMUNICACIÓN</strong> </td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{COMUNICACIÓN}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_COMUNICACIÓN" type="number" value="0" /><input style="width: 220px;" type="text"  name="attr_COMUNICACIÓN_hito" /></td>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/cultura.jpg" /><strong data-i18n="h-cultura">CULTURA</strong></td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/cultura.jpg" /><strong>CULTURA</strong></td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{CULTURA}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_CULTURA" type="number" value="0" /><input style="width: 220px;" type="text" name="attr_CULTURA_hito"  /></td>
                 </tr>
                 <tr>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/profesion.jpg" /><strong data-i18n="h-profesion">PROFESIÓN</strong> </td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/profesion.jpg" /><strong>PROFESIÓN</strong> </td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{PROFESIÓN}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_PROFESIÓN" type="number" value="0" /><input style="width: 220px;" type="text"  name="attr_PROFESIÓN_hito" /></td>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/psi.jpg" /><strong data-i18n="psiquico">PSIQUICO</strong></td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/psi.jpg" /><strong>PSIQUICO</strong></td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{PSI}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_PSI" type="number" value="0" /><input style="width: 220px;" type="text"  name="attr_PSI_hito" /></td>
                 </tr>
                 <tr>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/ocultismo.jpg" /><strong data-i18n="h-ocultismo">OCULTISMO</strong></td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/ocultismo.jpg" /><strong>OCULTISMO</strong></td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{CULTURISMO}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_CULTURISMO" type="number" value="0" /><input style="width: 220px;" type="text"  name="attr_OCULTISMO_hito" /></td>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/brujeria.jpg" /><strong data-i18n="h-brujeria">BRUJERÍA</strong></td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/brujeria.jpg" /><strong>BRUJERÍA</strong></td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{BRUJERÍA}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_BRUJERÍA" type="number" value="0" /><input style="width: 220px;" type="text"  name="attr_BRUJERÍA_hito" /></td>
                 </tr>
                 <tr>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/arcanas.jpg" /><strong data-i18n="h-arcanas">ARCANAS</strong> </td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/arcanas.jpg" /><strong>ARCANAS</strong> </td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{ARCANAS}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_ARCANAS" type="number" value="0" /><input style="width: 220px;" type="text"  name="attr_ARCANAS_hito" /></td>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/otras.jpg" /><strong data-i18n="h-otras1">OTRAS</strong> </td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/otras.jpg" /><strong>OTRAS</strong> </td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{OTRAS1}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_OTRAS1" type="number" value="0" /><input style="width: 220px;" type="text" name="attr_OTRAS1_hito"/></td>
                 </tr>
                 <tr>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/otras.jpg" /><strong data-i18n="h-otras2">OTRAS</strong> </td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/otras.jpg" /><strong>OTRAS</strong> </td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{OTRAS2}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_OTRAS2" type="number" value="0" /><input style="width: 220px;" type="text"   name="attr_OTRAS2_hito" /></td>
-                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/otras.jpg" /><strong data-i18n="h-otras3">OTRAS</strong> </td>
+                <td><img class="sheet-logo" style="width: 20px; text-align: left;" src="http://3dsign.es/borrar2/otras.jpg" /><strong>OTRAS</strong> </td>
                 <td><button type="roll" value="/r {3d10dh1}kh1+?{Elige Característica|FORTALEZA, @{FORTALEZA}|VOLUNTAD, @{VOLUNTAD}|REFLEJOS, @{REFLEJOS}|INTELECTO, @{INTELECTO}}+ @{OTRAS3}+?{Modificador|0}"></button></td>
                 <td><input style="width: 35px;" name="attr_OTRAS3" type="number" value="0" /><input style="width: 220px;" type="text"   name="attr_OTRAS3_hito" /></td>
                 </tr>
@@ -282,7 +281,7 @@
         </table>
     
     
-    <div class="sheet-header" data-i18n="notas">PODERES, ESPECIALIDADES & NOTAS</div>
+    <div class="sheet-header">PODERES, ESPECIALIDADES & NOTAS</div>
         <textarea style="width: 99%; height: 212px;" name="attr_Extra"></textarea>
     </div>
 </div>
